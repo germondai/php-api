@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 # imports
-use Utils\Helpers\Helper;
+use Helpers\Helper;
 use Utils\Database;
 use Utils\Doctrine;
 

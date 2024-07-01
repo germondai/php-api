@@ -6,7 +6,7 @@ namespace Utils;
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
-use Utils\Helpers\Helper;
+use Helpers\Helper;
 
 class Token
 {

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App;
 
-use Utils\Helpers\Helper;
+use Helpers\Helper;
 
 class Bootstrap implements \App\Interface\Bootstrap
 {
@@ -13,14 +13,10 @@ class Bootstrap implements \App\Interface\Bootstrap
         # solve request
         $request = Helper::getRequest();
         $parts = explode('/', $request);
-        $reqMode = !empty($parts[0]) ? $parts[0] : false;
 
         # solve modes
-        $modes = ['api', 'client'];
-        $prefMode = $_ENV['MODE'] ?? 'client';
-        $a = array_search($reqMode, $modes);
-        $isValidMode = $a === false ? -1 : $a;
-        $mode = $modes[$isValidMode] ?? $prefMode;
+        $modes = ['api'];
+        $mode = 'api';
 
         # remove mode from path
         if (in_array($parts[0], $modes))

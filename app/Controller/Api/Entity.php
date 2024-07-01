@@ -8,7 +8,7 @@ use App\Controller\Api;
 use Doctrine\ORM\Mapping\ClassMetadata;
 use Doctrine\ORM\Query;
 use Doctrine\ORM\Tools\Pagination\Paginator;
-use Utils\Helpers\Helper;
+use Helpers\Helper;
 
 class Entity extends Api
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Utils\Helpers;
+namespace Helpers;
 
 use App\Entity\Media;
 

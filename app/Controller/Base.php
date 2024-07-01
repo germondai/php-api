@@ -9,7 +9,7 @@ use Doctrine\ORM\EntityManager;
 use Nette\Database\Explorer;
 use Utils\Database;
 use Utils\Doctrine;
-use Utils\Helpers\Helper;
+use Helpers\Helper;
 
 abstract class Base implements Controller
 {
